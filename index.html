@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil, Nome e Profissão no Topo Esquerdo</title>
+<style>
+  body {
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Mantém o conteúdo centralizado */
+    padding-top: 160px; /* Ajusta o espaço no topo para o perfil, nome e profissão */
+    box-sizing: border-box;
+  }
+
+  .profile-container {
+    position: absolute;
+    top: 10px; /* Posiciona o container no topo da página */
+    left: 10px; /* Alinha o container à esquerda */
+    display: flex;
+    align-items: center; /* Alinha verticalmente a imagem e o texto */
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: url('sua-imagem-aqui.jpg') no-repeat center center; /* Substitua pela sua imagem */
+    background-size: cover;
+    border: 3px solid white;
+  }
+
+  .profile-info {
+    margin-left: 20px; /* Espaço entre a imagem e o texto */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-name {
+    font-size: 1.8em; /* Tamanho do texto para o nome */
+  }
+
+  .profile-profession {
+    font-size: 1.5em; /* Tamanho do texto para a profissão */
+    color: #ccc; /* Cor mais clara para a profissão */
+  }
+
+  .content{
+    margin-top: 17px;
+    width: 100%;
+    height: 340px;
+    border: 3px solid white;
+  }
+
+  .div-contatos{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5ch;
+    margin-top: 8px;
+  }
+
+  .linha-facebook {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .botao_rede_social {
+      width: 380px;
+      height: 70px; 
+      background-color: #24243e;
+      font-size: 3.0ch;
+      color: white;
+      border: 3px solid white;
+      margin-top: 19px;
+      display: flex; /* Adicionado para alinhar ícone e texto */
+      align-items: center; /* Centraliza verticalmente */
+      justify-content: center; /* Centraliza horizontalmente */
+     }
+
+  .icone_rede_social {
+      width: 30px; /* Ajuste conforme necessário */
+      height: 30px; /* Ajuste conforme necessário */
+      margin-right: 10px; /* Espaço entre ícone e texto */
+    }
+
+
+
+
+
+  @media (max-width: 600px) {
+    .profile-name {
+      font-size: 1.5em; /* Ajusta o tamanho do texto do nome para telas menores */
+    }
+    .profile-profession {
+      font-size: 1em; /* Reduz o tamanho do texto da profissão para que fique claramente menor que o nome */
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="profile-container">
+  <div class="profile-pic"></div> <!-- Imagem do perfil -->
+  <div class="profile-info">
+    <div class="profile-name">Daniela Pinheiro</div> <!-- Nome da pessoa -->
+    <div class="profile-profession">Cuidadora de idosos</div> <!-- Profissão da pessoa -->
+  </div>
+</div>
+
+<div class="content">
+
+    <div class="div-contatos"><h5>Contatos:</h5></div>
+
+    <div class="linha-facebook">
+      <button class="botao_rede_social">
+          <img src="img/icons8-facebook-novo-48.png" alt="Facebook" class="icone_rede_social">Facebook
+      </button>
+   </div>
+    
+    <div class="linha-facebook">
+      <button class="botao_rede_social">
+        <img src="img/icons8-whatsapp-logo-24.png" alt="Facebook" class="icone_rede_social">WhatsApp
+     </button>
+              
+    </div>
+
+    <div class="linha-facebook">
+      <button class="botao_rede_social">
+        <img src="img/icons8-instagram-48.png" alt="Facebook" class="icone_rede_social">Instagram
+      </button>           
+    </div>
+
+  
+    
+
+
+</div>
+
+</body>
+</html>
